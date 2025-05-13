@@ -14,17 +14,19 @@ const projects = [
   },
   {
     id: "2",
-    title: "博客平台",
-    description: "全栈博客系统，支持Markdown写作、评论系统和SEO优化",
-    techStack: ["Next.js", "React", "GraphQL", "Apollo"],
-    image: "/home/0.png"
+    title: "steps",
+    description: "A steps button based on React.js",
+    techStack: ["React.js", "TypeScript"],
+    image: "/home/0.png",
+    url: "/steps"
   },
   {
     id: "3",
     title: "任务管理工具",
     description: "轻量级任务管理应用，支持团队协作和甘特图视图",
     techStack: ["Next.js", "React Query", "Zustand", "D3.js"],
-    image: "/home/0.png"
+    image: "/home/0.png",
+    url: "/"
   }
 ];
 
