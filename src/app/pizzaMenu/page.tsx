@@ -1,3 +1,5 @@
+// "use client"; // 客户端组件声明
+
 import React from "react";
 import "./index.css";
 
