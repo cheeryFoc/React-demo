@@ -89,7 +89,7 @@ export default function Home() {
                   href={`${project.url}`}
                   className="text-blue-600 hover:underline inline-block"
                 >
-                  查看详情 →
+                  check the details →
                 </Link>
               </div>
             </article>
