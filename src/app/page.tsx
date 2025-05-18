@@ -8,7 +8,7 @@ const projects = [
     id: "1",
     title: "pizzaMenu",
     description: "A pizza shop based on React.js",
-    techStack: ["React.js", "TypeScript"],
+    techStack: ["React", "TypeScript"],
     image: "/home/0.png",
     url: "/pizzaMenu"
   },
@@ -16,15 +16,15 @@ const projects = [
     id: "2",
     title: "steps",
     description: "A steps button based on React.js",
-    techStack: ["React.js", "TypeScript"],
+    techStack: ["React", "TypeScript"],
     image: "/home/0.png",
     url: "/steps"
   },
   {
-    id: "3",
-    title: "任务管理工具",
-    description: "轻量级任务管理应用，支持团队协作和甘特图视图",
-    techStack: ["Next.js", "React Query", "Zustand", "D3.js"],
+    id: "99",
+    title: "尽情期待",
+    description: "轻量级应用，尽情期待",
+    techStack: ["Next.js", "React", "Zustand"],
     image: "/home/0.png",
     url: "/"
   }
@@ -74,6 +74,7 @@ export default function Home() {
                 width={500} // 根据需要设置宽度
                 height={200} // 根据需要设置高度
                 className="object-cover"
+                priority 
               />
               <div className="p-6">
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">
