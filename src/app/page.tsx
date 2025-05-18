@@ -1,7 +1,7 @@
 // "use client"; // 客户端组件声明
 
 import Link from "next/link";
-
+import Image from "next/image";
 // 静态项目数据
 const projects = [
   {
@@ -63,10 +63,17 @@ export default function Home() {
               id={project.id}
               className="overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-transform"
             >
-              <img
+              {/* <img
                 src={project.image}
                 alt={project.title}
                 className="w-full h-48 object-cover"
+              /> */}
+              <Image
+                src={project.image}
+                alt={project.title}
+                width={500} // 根据需要设置宽度
+                height={200} // 根据需要设置高度
+                className="object-cover"
               />
               <div className="p-6">
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">
