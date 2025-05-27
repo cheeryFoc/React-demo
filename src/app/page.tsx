@@ -21,6 +21,14 @@ const projects = [
     url: "/steps"
   },
   {
+    id: "3",
+    title: "travel - list",
+    description: "A travel-list app based on React.js",
+    techStack: ["React", "TypeScript"],
+    image: "/home/0.png",
+    url: "/travel"
+  },
+  {
     id: "99",
     title: "尽情期待",
     description: "轻量级应用，尽情期待",
@@ -57,7 +65,7 @@ export default function Home() {
       {/* 项目列表 */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project) => (
+          {projects.sort((a, b) => parseInt(a.id) - parseInt(b.id)).map((project) => (
             <article
               key={project.id}
               id={project.id}
@@ -74,7 +82,7 @@ export default function Home() {
                 width={500} // 根据需要设置宽度
                 height={200} // 根据需要设置高度
                 className="object-cover"
-                priority 
+                priority
               />
               <div className="p-6">
                 <h2 className="text-xl font-semibold text-gray-900 mb-2">
